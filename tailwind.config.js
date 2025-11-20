@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -13,6 +14,22 @@ export default {
         mona: ['Mona Sans', 'system-ui', 'sans-serif'],
         'ibm-plex': ['IBM Plex Sans', 'system-ui', 'sans-serif'],
         manrope: ['Manrope', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        neo: {
+          light: '#e6ebf1',
+          dark: '#1f2430',
+          tint: '#f6f9fc',
+          shade: '#c9d2e1',
+        }
+      },
+      boxShadow: {
+        'neo-sm': '6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.9)',
+        'neo': '10px 10px 20px rgba(0,0,0,0.12), -10px -10px 20px rgba(255,255,255,0.9)',
+        'neo-inset': 'inset 6px 6px 12px rgba(0,0,0,0.08), inset -6px -6px 12px rgba(255,255,255,0.9)',
+        'neo-dark': '10px 10px 20px rgba(0,0,0,0.5), -10px -10px 20px rgba(255,255,255,0.04)',
+        'neo-dark-sm': '6px 6px 12px rgba(0,0,0,0.55), -6px -6px 12px rgba(255,255,255,0.05)',
+        'neo-dark-inset': 'inset 6px 6px 12px rgba(0,0,0,0.55), inset -6px -6px 12px rgba(255,255,255,0.05)'
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
